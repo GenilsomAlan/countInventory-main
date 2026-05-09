@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Gill Sans', Calibri, sans-serif;
+}
+
+/* =========================
+   TELA PRINCIPAL
+========================= */
+
+#mainGet{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-image: url('./img/wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.title h1{
+    text-align: center;
+
+    font-size: 24px;
+
+    color: #333;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.imports{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.imports label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+#input-btn{
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background-color: #fafafa;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#input-btn:hover{
+    border-color: orangered;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.buttonRelatorio{
+    width: 100%;
+}
+
+#enviar{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: orangered;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#enviar:hover{
+    background-color: rgb(210, 58, 3);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px){
+
+    .card{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .title h1{
+        font-size: 20px;
+    }
+
+    #enviar{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+
+    #mainGet{
+        padding: 15px;
+    }
+
+    .card{
+        padding: 20px;
+    }
+
+    .title h1{
+        font-size: 18px;
+    }
+
+    #input-btn{
+        font-size: 12px;
+    }
+}
