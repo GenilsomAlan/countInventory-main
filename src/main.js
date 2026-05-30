@@ -1,6 +1,6 @@
 // import { createClient } from 'http://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
 // import { dayNow } from './helpers.js'
-const url = "../api/inventory"
+const url = "/api/inventory"
 
 fetch(url)
 .then(res => res.json())
